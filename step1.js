@@ -15,10 +15,14 @@ const cat = path => {
   }
 }
 
-if (process.argv.length < 3) {
-  const path = prompt('Enter a file path: ');
-  cat(path);
+// if (process.argv.length < 3) {
+//   const path = prompt('Enter a file path: ');
+//   cat(path);
 
-} else {
-  cat(process.argv[2]);
-}
+// } else {
+//   cat(process.argv[2]);
+// }
+
+module.exports = {
+  cat,
+};
